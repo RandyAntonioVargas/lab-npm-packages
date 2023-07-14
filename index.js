@@ -9,14 +9,18 @@ const newMember = require("./data/new-member");
  * @param {Object} obj -
  * @return {number} The number of keys in the object
  */
-function numberOfKeys(obj) {}
+function numberOfKeys(obj) {
+ return _.keys(obj)
+}
 
 /**
  * Remove the falsy values in a numbers array and return the sum
  * @param {numbers[]} array - An array of numbers that can also contain some falsy values
  * @return {number} The sum of the numbers in an array
  */
-function sumNumbers(array) {}
+function sumNumbers(array) {
+return _.zipWith([1,3],[10,6],[0])
+}
 
 /**
  * Convert a two-dimensional array of new member data (each inner array having two values: the first being the key, the second being the value) into an object
